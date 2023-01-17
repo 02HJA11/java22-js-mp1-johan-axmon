@@ -62,9 +62,10 @@ const second = document.querySelector('.second');
 second.style.border = "2px solid black";
 second.style.marginTop = "20px";
 second.style.height = "300px";
-
-// second.style.flex = "auto";
-// second.style.flexDirection = "row";
+second.style.display = "flex";
+second.style.flexDirection = "row";
+second.style.alignItems = "center";
+second.style.justifyContent = "space-around";
 
 
 
@@ -75,15 +76,10 @@ for(let i = 1; i < 4; i++) {
     div.classList.add('row'+i);
     parent.append(div);
     div.style.border = "10px solid #a8a8f0";
-    div.style.height = "175px";
+    div.style.height = "182.5px";
     div.style.width = "50px";
-    const j = 250;
-    div.style.marginLeft = (j*i) + "px";
-    div.style.marginTop = "40px";
+  
 }
-
-// second.style.flexDirection = "column";
-// second.style.flexFlow = "row wrap";
 
 for(let i=0; i < 10; i++){
     const div = document.querySelector('.row1');
@@ -139,6 +135,7 @@ for(let i=9; i != -1; i--){
     para.style.textAlign = "center";
     
     para.style.margin = "0px";
+   
     switch(i){
         case 0:
             para.style.backgroundColor = "black";
@@ -235,8 +232,8 @@ for(let i=0; i < 10; i++){
 }
 
 const numbers = document.querySelectorAll('.numbers');
-numbers[1].style.marginTop = "-195px";
-numbers[2].style.marginTop = "-195px";
+// numbers[1].style.marginTop = "-195px";
+// numbers[2].style.marginTop = "-195px";
 
 
 
